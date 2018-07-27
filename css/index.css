@@ -22,6 +22,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
     vertical-align: baseline;
+    border: 1px dashed red; 
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -80,6 +81,7 @@ header nav {
     display: flex;
     width: 80%;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 header nav a {
@@ -96,6 +98,8 @@ header nav a {
 }
 
 .top-content img {
+    width: 96%;
+    height: 100%;
     margin: 20px 0;
 }
 
@@ -152,9 +156,9 @@ footer {
 }
 
 footer nav {
-    width: 60%;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     padding: 20px 2%;
     font-size: 14px;
@@ -204,4 +208,64 @@ footer nav a {
     display: flex;
     margin: 0 2% 20px;
     justify-content: space-around;
+}
+
+/* Contact page nuances */
+
+.top-content-contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+}
+
+.top-content-contact img {
+    width: 96%;
+    height: 100%;
+    margin: 20px 0;
+}
+
+.text-container-contact {
+    /* display: flex; 
+    justify-content: Center; */
+    font-size: 30px;
+    text-align: center; 
+}
+
+.text-container-contact h2 {
+    font-size: 30px;
+}
+
+.text-container-contact p {
+    font-size: 20px; 
+    margin: 0 0 20px; 
+}
+
+.middle-content-contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly; 
+    margin: 0 0 40px;
+}
+
+.middle-content-contact .circle-options {
+    padding: 70px;
+    border: 2px solid black;
+    border-radius: 50%;
+    height: 67px; 
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: lightgrey;
+}
+
+.middle-content-contact .circle-options p {
+    display: block;
+    text-align: center;
+}
+
+.middle-content-contact .circle-options a {
+    text-decoration: none;
 }
